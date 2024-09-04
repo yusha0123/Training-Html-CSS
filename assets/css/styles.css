@@ -184,7 +184,12 @@ nav a {
     text-align: center;
   }
 
+  .hero .text-content {
+    gap: 10px;
+  }
+
   .text-content h1 {
+    margin-top: 20px;
     font-size: 25px;
   }
 
@@ -256,23 +261,6 @@ nav a {
   width: 100%;
 }
 
-@media screen and (max-width: 550px) {
-  .services-action .select {
-    width: 35%;
-    min-width: 120px;
-  }
-  .services-action .search-container {
-    width: 65%;
-  }
-  .nav-right span .fa-chevron-down {
-    font-size: 8px;
-  }
-
-  .services h2 {
-    font-size: 1.2rem;
-  }
-}
-
 .services .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -332,8 +320,45 @@ nav a {
     grid-template-columns: 1fr;
   }
 
-  .card-content .info {
+  .card .card-content {
     font-size: 15px;
+    padding: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services-action .select {
+    width: 35%;
+    min-width: 120px;
+  }
+  .services-action .search-container {
+    width: 65%;
+  }
+  .nav-right span .fa-chevron-down {
+    font-size: 8px;
+  }
+
+  .services h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .services .cards {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  .card .card-action {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .card .card-action i {
+    font-size: 15px;
+  }
+
+  .card .card-action {
+    font-size: 13px;
   }
 }
 
@@ -482,5 +507,9 @@ nav a {
   .up-div-3 {
     order: 3;
     width: 100%;
+  }
+
+  .footer .downward-footer .container {
+    padding: 0px;
   }
 }
